@@ -1,0 +1,27 @@
+{
+  "name": "api_rest",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server.js"
+  },
+  "keywords": [],
+  "author": {
+    "name": "PabloRafael-coder (gitHub)",
+    "email": "pabloofael@gmail.com",
+    "url": "https://github.com/PabloRafael-coder"
+  },
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "eslint": "9.x",
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.5.0",
+    "globals": "^15.6.0",
+    "nodemon": "^3.1.3",
+    "sucrase": "^3.35.0"
+  }
+}
