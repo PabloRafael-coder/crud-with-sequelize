@@ -1,8 +1,8 @@
-const { resolve } = require('node:path');
-
-
 module.exports = {
-    config: resolve(__dirname, 'src', 'config', 'database.js'),
-    'migrations-path': resolve(__dirname, 'src', 'database', 'migrations'),
-    'models-path': resolve(__dirname, 'src', 'app', 'models')
+    dialect: 'postgres',
+    database: 'userRegistration',
+    username: 'postgres',
+    password: 'postgres',
+    host: 'localhost',
+    port: 5432,
 }
