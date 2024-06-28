@@ -5,4 +5,7 @@ module.exports = {
     password: 'postgres',
     host: 'localhost',
     port: 5432,
+    define: {
+        timestamps: true
+    }
 }
