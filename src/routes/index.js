@@ -1,25 +1,13 @@
 import { Router } from "express";
-import User from "../app/models/User";
-import { v4 } from 'uuid'
+
+import UserController from "../app/controllers/UserController";
 
 const routes = Router();
 
-routes.get('/', async (req, res) => {
+routes.get('/users', UserController.index);
+routes.post('/users', UserController.store);
+routes.put('/user/:id', UserController.update);
+routes.delete('/user/:id', UserController.delete);
 
-    const dbuser = await User.findAll({ raw: true })
-
-    return res.status(200).json({ dbuser })
-});
-
-routes.post('/', (req, res) => {
-
-    const { name, age, email, skill } = req.body
-
-    const user = User.create({
-        id: v4(), name, age, email, skill
-    })
-
-    res.status(201).json(user)
-})
 
 export default routes;
